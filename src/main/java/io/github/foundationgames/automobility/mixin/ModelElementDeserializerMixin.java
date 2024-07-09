@@ -3,10 +3,12 @@ package io.github.foundationgames.automobility.mixin;
 import com.google.gson.JsonObject;
 import net.minecraft.util.JsonHelper;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Pseudo;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
+@Pseudo
 @Mixin(targets = "net/minecraft/client/render/model/json/ModelElement$Deserializer")
 public class ModelElementDeserializerMixin {
     /*
