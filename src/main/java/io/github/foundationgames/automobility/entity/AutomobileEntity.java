@@ -305,7 +305,6 @@ public class AutomobileEntity extends Entity implements RenderableAutomobile, En
         accelerating = (1 & d) > 0;
     }
 
-    @Environment(EnvType.CLIENT)
     public boolean updateModels = true;
 
     public AutomobileEntity(EntityType<?> type, World world) {
